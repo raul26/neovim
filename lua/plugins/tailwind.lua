@@ -5,7 +5,7 @@ return {
       servers = {
         tailwindcss = {},
         vtsls = {
-          setings = {
+          settings = {
             typescript = {
               updateImportsOnFileMove = { enabled = "always" },
               suggest = {
