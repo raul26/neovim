@@ -17,6 +17,13 @@ return {
   opts = {
     filesystem = {
       follow_current_file = { enabled = false },
+      window = {
+        mappings = {
+          ["l"] = "noop",
+          ["h"] = "noop",
+          ["w"] = "noop",
+        },
+      },
     },
     window = {
       mappings = {
