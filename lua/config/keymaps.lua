@@ -8,3 +8,6 @@ map({ "n" }, "<leader>q", ":bp<bar>sp<bar>bn<bar>bd<CR>", { desc = "Close buffer
 map({ "n", "v" }, "<leader>f", function()
   LazyVim.format({ force = true })
 end, { desc = "Format" })
+
+map({ "n" }, "pd", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", { desc = "Peek definition" })
+map({ "n" }, "pr", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", { desc = "Peek references" })
