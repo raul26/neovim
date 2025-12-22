@@ -30,6 +30,20 @@ return {
           ["o"] = "open",
         },
       },
+      renderers = {
+        file = {
+          { "icon" },
+          { "name", use_git_status_colors = true },
+          { "diagnostics" },
+          { "git_status" },
+        },
+        directory = {
+          { "icon" },
+          { "name", use_git_status_colors = true },
+          { "diagnostics" },
+          { "git_status" },
+        },
+      },
       components = {
         icon = function(config, node, state)
           local icon = config.default or " "

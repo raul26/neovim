@@ -3,7 +3,7 @@ return {
     "davidmh/cspell.nvim",
   },
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
       table.insert(opts.ensure_installed, "html-lsp")
       table.insert(opts.ensure_installed, "css-lsp")
